@@ -13,6 +13,8 @@
 		FC3F50001B0BEF8B003A3CCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3F4FFF1B0BEF8B003A3CCB /* Images.xcassets */; };
 		FC3F50031B0BEF8B003A3CCB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3F50011B0BEF8B003A3CCB /* LaunchScreen.xib */; };
 		FC3F500F1B0BEF8B003A3CCB /* Delegate_Challenge_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F500E1B0BEF8B003A3CCB /* Delegate_Challenge_AppTests.swift */; };
+		FCE4DE621B0D3251006A2CE1 /* ZipTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4DE611B0D3251006A2CE1 /* ZipTextFieldDelegate.swift */; };
+		FCE4DE641B0D3261006A2CE1 /* CurrencyTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4DE631B0D3261006A2CE1 /* CurrencyTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		FC3F50081B0BEF8B003A3CCB /* Delegate Challenge AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Delegate Challenge AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3F500D1B0BEF8B003A3CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3F500E1B0BEF8B003A3CCB /* Delegate_Challenge_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate_Challenge_AppTests.swift; sourceTree = "<group>"; };
+		FCE4DE611B0D3251006A2CE1 /* ZipTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipTextFieldDelegate.swift; sourceTree = "<group>"; };
+		FCE4DE631B0D3261006A2CE1 /* CurrencyTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		FC3F4FF51B0BEF8B003A3CCB /* Delegate Challenge App */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4DE601B0D3201006A2CE1 /* Delegates */,
 				FC3F4FF81B0BEF8B003A3CCB /* AppDelegate.swift */,
 				FC3F4FFA1B0BEF8B003A3CCB /* ViewController.swift */,
 				FC3F4FFC1B0BEF8B003A3CCB /* Main.storyboard */,
@@ -110,6 +115,15 @@
 				FC3F500D1B0BEF8B003A3CCB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCE4DE601B0D3201006A2CE1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FCE4DE611B0D3251006A2CE1 /* ZipTextFieldDelegate.swift */,
+				FCE4DE631B0D3261006A2CE1 /* CurrencyTextFieldDelegate.swift */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3F4FFB1B0BEF8B003A3CCB /* ViewController.swift in Sources */,
+				FCE4DE641B0D3261006A2CE1 /* CurrencyTextFieldDelegate.swift in Sources */,
+				FCE4DE621B0D3251006A2CE1 /* ZipTextFieldDelegate.swift in Sources */,
 				FC3F4FF91B0BEF8B003A3CCB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +425,7 @@
 				FC3F50141B0BEF8B003A3CCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC3F50151B0BEF8B003A3CCB /* Build configuration list for PBXNativeTarget "Delegate Challenge AppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				FC3F50171B0BEF8B003A3CCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
