@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textFieldZip: UITextField!
     @IBOutlet weak var textFieldCurrency: UITextField!
@@ -23,13 +23,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         self.textFieldZip.delegate = self.zipTextFieldDelegate
+        self.textFieldCurrency.delegate = self.currencyTextFieldDelegate
+        self.textFieldLockable.delegate = self
+
+        self.switchLockable.setOn(false, animated: true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // Text Field Delegate
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+
+        return self.switchLockable.on
     }
 
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
 
+        textFieldLockable.resignFirstResponder()
+        return true
+    }
+
+    @IBAction func toggleLockable(sender: UISwitch) {
+
+        if !(sender as UISwitch).on {
+            self.switchLockable.resignFirstResponder()
+        }
+    }
 }
 
